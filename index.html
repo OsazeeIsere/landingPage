@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head lang="en">
+        <meta name="viewport" content="width=media-width, initial-scale=1.0"
+
      <title></title>
 <style>
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        margin:0 ;
+
+    }
     .self-clear::after {
 content: "";
 display: block;
@@ -15,20 +24,20 @@ background-position: right center;
 background-size: cover;
 padding-bottom: 1em;
 width: 100vw;
-height: 60vh;
+height: 70vh;
 
     }
     .header-image {
 float: left;
 width: 30%;
-margin-top: 3em;
-margin-right: 10px;
+margin-top: 2%;
+margin-right: 5%;
 text-align: right;
 }
 .header-info {
 float: right;
 width: 63%;
-margin-top: 4em;
+margin-top: 10%;
 margin-left: 10px;
 color: white;
 font-size: 1.25em;
@@ -45,8 +54,10 @@ color: white;
 background-color:blue;
 }
 .description {
+    margin-top: 10%;
+
 width: 100%;
-padding: 1em 0;
+padding: 1% 0;
 font-size: 1.25em;
 background-color: white;
 }
@@ -62,20 +73,23 @@ clear: both;
 }
 .testimonials {
 width: 100%;
-padding: 1em 0;
+padding: 2% 0;
 font-size: 1.25em;
 background-color:rgb(124, 147, 177);
 }
 .testimonials-text {
 float: left;
+padding: 1.5% 0;
+
 width:75%;
 color: white;
 }
 .testimonial {
-margin-bottom: .75em;
+margin-bottom: 10%;
 }
 .testimonials-image {
 float: right;
+width:25%;
 
 }
 /*.services-title {
@@ -84,28 +98,28 @@ font-size: 2em;
 text-align: center;
 } */
 .services {
-padding: 1em 0;
+padding:0;
 
 }
 .services-title {
 float: left;
 width: 25%;
 font-size: 1.5em;
-padding-top: 2em;
+padding-top: 5%;
 margin-right: 5%;
 }
 .service-type {
     width: 70%;
     float: left;
-padding: .75em 0;
-background-color:rgb(124, 147, 177);
-color: white;
+padding: 0;
+background-color:white;
+color:black;
 
 }
 .service-col{
     width: 43%;
     float: left;
-padding: 1em;
+padding: 2%;
 font-size: 1.2em;
 
 }
@@ -211,12 +225,32 @@ padding-right: 1.5em;
 text-decoration: none;
 
 }
-@media (max-width: 350px) {
+@media (max-width: 450px) {
 .header-image {
 float: none;
 width: 100%;
 }
 .header-info {
+float: none;
+width: 100%;
+}
+.testimonials-text {
+float: none;
+width: 100%;
+}
+.testimonials-image {
+float: none;
+width: 100%;
+}
+.services-title {
+float: none;
+width: 100%;
+}
+.service-type {
+float: none;
+width: 100%;
+}
+.service-col {
 float: none;
 width: 100%;
 }
