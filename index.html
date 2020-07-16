@@ -270,6 +270,32 @@ font-size: 24px;
 }
 
 }
+.desc-img {
+float: left;
+width: 25%;
+font-size: 1.5em;
+padding-top: 5%;
+margin-right: 5%;
+}
+.desc-text {
+    width: 70%;
+    float: left;
+padding: 0;
+background-color:white;
+color:black;
+
+}
+.desc-img {
+display: none;
+}
+@media (min-width: 750px) {
+.desc-img {
+display: block;
+}
+h1{
+    font-size: 32px;
+}
+}
 </style>
 
     </head>
@@ -319,7 +345,20 @@ font-size: 24px;
      <!-- end HEADER-->
     <div class="description">
         <div class="container">
+            <div class="desc-img">
+                <figure>
+                    <img src="images\directors.jpg" alt="Board of directors">
+                    <figcaption>
+                         directors
+                    </figcaption>
+                </figure>
+
+            </div>
+            <div class="desc-text">
         <h1 style="color:blue; text-transform:uppercase ;"><span>NozemenInfotech</span> </h1><h1 style="font-style: italic; text-transform:capitalize;">website design and ict company benin city nigeria</h1>
+    </div>
+    <div class="self-clear"></div>
+
         <h2>
             NozemenInfotech is an innovative website Design and ICT company based in Benin City, Edo State in Nigeria NozemenInfotech
     We work as a team to create beautiful and engaging digital experience.
