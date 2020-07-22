@@ -41,7 +41,7 @@ background-attachment: fixed;
 background-position: right center;
 background-size: cover;
 max-width: 100vw;
-height: 100vh;
+height: 65vh;
 }
 .nav-flex {
 display: flex;
@@ -214,7 +214,12 @@ h1{
 
    <main>
     <article>
-        <img src="images/service1.jpg" alt=”Web Design”>
+        <img src="images/service1.jpg" 
+sizes="(max-width: 700px) 100vw, 75vw"
+srcset="images/service450.png 450w,
+images/service900.jpg 900w,
+images/director1350.jpg 1350w">
+        
     </article>
     <aside>
         <h1>We create <span style="color:blue;">Amazing Websites</span> at affordable prices
