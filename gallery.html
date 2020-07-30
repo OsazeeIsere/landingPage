@@ -18,6 +18,8 @@ justify-content: center;
 align-items: center;
 width: 100%;
 background-color: inherit;
+position: fixed;
+top: 0;
 }
 nav ul{
     display: flex;
@@ -81,6 +83,7 @@ min-height: 100vh;
     *font-family: Optima, Calibri, sans-serif;
 background-color: #221900;
 color: #ecd078;
+padding-top: 3.5em;
 }
 header{
     display: flex;
@@ -114,19 +117,20 @@ img{
     </style>
 </head>
 <body>
+    <nav>
+        <ul >
+            <li> <span class="current-page">Gallery 1</span></li>
+            <li><a href="gallery2.html">Gallery 2</a></li>
+            <li><a href="gallery3.html">Gallery 3</a></li>
+            <li><a href="gallery4.html">Gallery 4</a></li>
+          </ul>
+            </nav>
     <header>
 
         <img src="images/newLOGOS.jpg" alt="NozemenInfotech logo" class="logoimg">
     <h1>NozemenInfotech</h1>
     </header>
-    <nav>
-<ul >
-    <li> <span class="current-page">Gallery 1</span></li>
-    <li><a href="gallery2.html">Gallery 2</a></li>
-    <li><a href="gallery3.html">Gallery 3</a></li>
-    <li><a href="gallery4.html">Gallery 4</a></li>
-  </ul>
-    </nav>
+ 
     <main>
        <a href="gallery/1.jpg" target="_blank"> <img src="gallery/1 copy.jpg" alt="Thumbnail for
        image 1"></a>
