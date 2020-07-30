@@ -11,23 +11,99 @@
         font-family: cursive;
     }*/
 nav{
-font-family: Optima, Calibri, sans-serif;}
-li{
-list-style: none;
+font-family: Optima, Calibri, sans-serif;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 100%;
+background-color: inherit;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+
 
 }
+
+nav li{
+padding:1em 2em;
+text-transform: uppercase;
+text-decoration:none;
+}
+.current-page {
+padding: .75em;
+background-color: #ecd078;
+color: #221900;
+}
+a {
+color: inherit;
+text-decoration: none;
+}
+a:hover {
+color: #d95b43;
+text-decoration: underline;
+}
 main{
+display: flex;
+justify-content: center;
+align-content:flex-start;
+flex-grow: 1;
+max-width: 960px;
+flex-wrap: wrap;
+font-family: Optima, Calibri, sans-serif;
   /*  max-width: 60rem;*/
+}
+footer{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+padding: 1em 0;
+text-transform: uppercase;
+background-color: #542437;
+}
+footer p {
+padding: 0 1.5em;
 }
 body{
     display:flex;
     flex-direction:column;
     justify-content: start;
-    text-align: center;
+    align-items: center;
 min-height: 100vh;
-    /*font-family: Optima, Calibri, sans-serif;
+    *font-family: Optima, Calibri, sans-serif;
 background-color: #221900;
-color: #ecd078;*/
+color: #ecd078;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+width: 100%;
+background-color: #542437;
+}
+h1{
+    padding-left: o.5em;
+    font-family: cursive;
+    font-size: 3em;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+footer nav{
+    display: flex;
+    flex-direction: row;
+    padding:1em 2em;
+width: 100rem;
 }
     </style>
 </head>
@@ -38,34 +114,52 @@ color: #ecd078;*/
     <h1>NozemenInfotech</h1>
     </header>
     <nav>
-<ul>
-    <li>Gallery 1</li>
-    <li>Gallery 2</li>
-    <li>Gallery 3</li>
-    <li>Gallery 4</li>
+<ul >
+    <li> <span class="current-page">Gallery 1</span></li>
+    <li><a href="gallery2.html">Gallery 2</a></li>
+    <li><a href="gallery3.html">Gallery 3</a></li>
+    <li><a href="gallery4.html">Gallery 4</a></li>
   </ul>
     </nav>
     <main>
-        <img src="http://placehold.it/300x200" alt="">
-        <img src="http://placehold.it/300x200" alt="">
-        <img src="http://placehold.it/300x200" alt="">
-        <img src="http://placehold.it/300x200" alt="">
+       <a href="gallery/1.jpg" target="_blank"></a>> <img src="gallery/1 copy.jpg" alt="Thumbnail for
+       image 1"></a>
+       <a href="gallery/2.jpg"> <img src="gallery/2.1.jpg" alt="Thumbnail for
+        image 2"></a>
+        <a href="gallery/4.jpg">  <img src="gallery/4.1.jpg" alt="Thumbnail for
+            image 4"></a>
+            <a href="gallery/5.jpg"> <img src="gallery/5.1.jpg" alt="Thumbnail for
+                image 5"></a>
+                <a href="gallery/6.jpg"> <img src="gallery/6.1.jpg" alt="Thumbnail for
+                    image 6"></a>
+                    <a href="gallery/7.jpg"> <img src="gallery/7.1.jpg" alt="Thumbnail for
+                        image 7"></a>
+                    <a href="gallery/8.jpg"> <img src="gallery/8.1.jpg" alt="Thumbnail for
+                        image 8"></a>
+                    <a href="gallery/9.jpg"> <img src="gallery/9.1.jpg" alt="Thumbnail for
+                        image 9"></a>
+                        <a href="gallery/10.jpg"> <img src="gallery/10.1.jpg" alt="Thumbnail for
+                            image 10"></a>
+    
     </main>
     <footer>
-    
-            <div>
-                Follow NozemenInfotech on social media:
-                </div>
-                <div>
+        Follow NozemenInfotech on social media:
+
+           <section> 
+                
                 <a href="#" class="social-link"><img src="images/Nfacebook2.jpg" alt="Facebook icon"></a>
                 <a href="#" class="social-link"><img src="images/newtwiter2.png" alt="Twitter icon"></a>
                 <a href="#" class="social-link"><img src="images/google-plus-red-logo2.png" alt="Google Plus icon"></a>
                 <a href="#" class="social-link"><img src="images/linkedin2.png" alt="LinkedIn icon"></a>
-                </div>    
-    <a href="#" class="footer-link">About</a>
-    <a href="#" class="footer-link">Contact</a>
-    <a href="#" class="footer-link">Site Map</a>
-    <a href="#" class="footer-link">Privacy</a>
+            </section>  
+      <nav> 
+          <ul>        
+   <li> <a href="#" class="footer-link">About</a></li>
+   <li> <a href="#" class="footer-link">Contact</a></li>
+   <li> <a href="#" class="footer-link">Site Map</a></li>
+   <li> <a href="#" class="footer-link">Privacy</a></li>
+</ul>
+</nav>
     Copyright 2020 NozemenInfotech 
     </footer>
 </body>
