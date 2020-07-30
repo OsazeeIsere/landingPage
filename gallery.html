@@ -48,11 +48,14 @@ main{
 display: flex;
 justify-content: center;
 align-content:flex-start;
+flex-basis: 300px;
 flex-grow: 1;
-max-width: 960px;
+max-width: 90rem;
 flex-wrap: wrap;
 font-family: Optima, Calibri, sans-serif;
+padding-bottom: 3.5em;
   /*  max-width: 60rem;*/
+ 
 }
 footer{
 display: flex;
@@ -60,9 +63,11 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 100%;
-padding: 1em 0;
+padding:1em 0;
 text-transform: uppercase;
 background-color: #542437;
+height: auto;
+bottom: 0;
 }
 footer p {
 padding: 0 1.5em;
@@ -85,6 +90,8 @@ header{
     padding: 1em 0;
 width: 100%;
 background-color: #542437;
+
+top: 0;
 }
 h1{
     padding-left: o.5em;
@@ -99,11 +106,10 @@ section{
     flex-grow: 1;
     flex-wrap: wrap;
 }
-footer nav{
+img{
     display: flex;
-    flex-direction: row;
-    padding:1em 2em;
-width: 100rem;
+    flex-shrink: 0;
+    flex-wrap: wrap;
 }
     </style>
 </head>
@@ -122,7 +128,7 @@ width: 100rem;
   </ul>
     </nav>
     <main>
-       <a href="gallery/1.jpg" target="_blank"></a>> <img src="gallery/1 copy.jpg" alt="Thumbnail for
+       <a href="gallery/1.jpg" target="_blank"> <img src="gallery/1 copy.jpg" alt="Thumbnail for
        image 1"></a>
        <a href="gallery/2.jpg"> <img src="gallery/2.1.jpg" alt="Thumbnail for
         image 2"></a>
@@ -140,18 +146,25 @@ width: 100rem;
                         image 9"></a>
                         <a href="gallery/10.jpg"> <img src="gallery/10.1.jpg" alt="Thumbnail for
                             image 10"></a>
-    
+                            <a href="gallery/11.jpg"> <img src="gallery/11.1.jpg" alt="Thumbnail for
+                                image 8"></a>
+                            <a href="gallery/14.jpg"> <img src="gallery/14.1.jpg" alt="Thumbnail for
+                                image 9"></a>
+                                <a href="gallery/13.jpg"> <img src="gallery/13.1.jpg" alt="Thumbnail for
+                                    image 10"></a>
+                         
     </main>
+    
     <footer>
-        Follow NozemenInfotech on social media:
+        <h2 style="text-transform:capitalize"> Follow NozemenInfotech on social media:</h2>
 
-           <section> 
-                
-                <a href="#" class="social-link"><img src="images/Nfacebook2.jpg" alt="Facebook icon"></a>
-                <a href="#" class="social-link"><img src="images/newtwiter2.png" alt="Twitter icon"></a>
-                <a href="#" class="social-link"><img src="images/google-plus-red-logo2.png" alt="Google Plus icon"></a>
-                <a href="#" class="social-link"><img src="images/linkedin2.png" alt="LinkedIn icon"></a>
-            </section>  
+        <section> 
+             
+             <a href="#" class="social-link"><img src="images/Nfacebook2.jpg" alt="Facebook icon"></a>
+             <a href="#" class="social-link"><img src="images/newtwiter2.png" alt="Twitter icon"></a>
+             <a href="#" class="social-link"><img src="images/google-plus-red-logo2.png" alt="Google Plus icon"></a>
+             <a href="#" class="social-link"><img src="images/linkedin2.png" alt="LinkedIn icon"></a>
+         </section>  
       <nav> 
           <ul>        
    <li> <a href="#" class="footer-link">About</a></li>
