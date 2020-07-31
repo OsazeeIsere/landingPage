@@ -20,7 +20,7 @@ width: 100%;
 background-color: inherit;
 position: sticky;
 top: 0;
-z-index: 10;
+z-index: 1;
 }
 nav ul{
     display: flex;
@@ -93,7 +93,7 @@ header{
     padding: 1em 0;
 width: 100%;
 background-color: #542437;
-
+height: 8vh;
 top: 0;
 }
 h1{
@@ -113,11 +113,33 @@ img{
     display: flex;
     flex-shrink: 0;
     flex-wrap: wrap;
+    padding-right: 0.5rem;
 }
 .image-thumbnail {
 display: flex;
 flex-direction: column;
 align-items: center;
+}
+.image-thumbnail1 {
+position: relative;
+width: 300px;
+height: 225px;
+}
+.image-caption{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+position:absolute;
+right: 0;
+top: 0;
+width: 300px;
+height: 225px;
+background-color: rgba(32, 32, 32, 0.75);
+color: #ecd078;
+opacity: 0;
+}
+.image-caption:hover {
+opacity: 1;
 }
     </style>
 </head>
@@ -136,46 +158,57 @@ align-items: center;
   </ul>
     </nav>
     <main>
-        <div class="image-thumbnail">
+        <div class="image-thumbnail1">
        <a href="gallery/1.jpg" target="_blank"> <img src="gallery/1 copy.jpg" alt="Thumbnail for
        image 1">
-<figure>
-    <figcaption>
-        Lovely Couple
-    </figcaption>
-</figure>
+       <figcaption class="image-caption">
+        <p class="caption-title">Lovely Couple</p>
+        <p class="caption-text">Together on a lovely day. It was a day that 
+            our fantastic kingdom hall was dedicated to our lovey heavenly
+               father JEHOVAH.
+        </p>
+       </figcaption>
+        </div>
 </a>
+
     </div>
-    <div class="image-thumbnail">
+    <div class="image-thumbnail1">
 
        <a href="gallery/2.jpg"> <img src="gallery/2.1.jpg" alt="Thumbnail for
         image 2">
-        <figure>
-            <figcaption>
-                Lovely Couple with Brother's wife
-            </figcaption>
-        </figure>
+        <figcaption class="image-caption">
+            <p class="caption-title">Lovely Couple wth brother' wife</p>
+            <p class="caption-text">Together on a lovely day. It was a day that 
+             our fantastic kingdom hall was dedicated to our lovey heavenly
+                father JEHOVAH. They came from bethel 
+                to join us grace the occassion.
+            </p>
+           </figcaption>
     </a>
             </div>
-        <div class="image-thumbnail">
+        <div class="image-thumbnail1">
         <a href="gallery/4.jpg">  <img src="gallery/4.1.jpg" alt="Thumbnail for
             image 4">
-            <figure>
-                <figcaption>
-                    Lovely Couple Again
-                </figcaption>
-            </figure>
+            <figcaption class="image-caption">
+                <p class="caption-title">Lovely Couple again</p>
+                <p class="caption-text">Together on a lovely day. It was a day that 
+                 our fantastic kingdom hall was dedicated to our lovey heavenly
+                    father JEHOVAH. 
+                </p>
+               </figcaption>
         </a>
                 </div>
-            <div class="image-thumbnail">
+            <div class="image-thumbnail1">
             <a href="gallery/5.jpg"> <img src="gallery/5.1.jpg" alt="Thumbnail for
                 image 5">
-                <figure>
-                    <figcaption>
-                        wiht brother's wife
-                       
-                    </figcaption>
-                </figure>
+                <figcaption class="image-caption">
+                    <p class="caption-title">Lovely Couple wth brother' wife</p>
+                    <p class="caption-text">Together on a lovely day. It was a day that 
+                     our fantastic kingdom hall was dedicated to our lovey heavenly
+                        father JEHOVAH. They came from bethel 
+                        to join us grace the occassion.
+                    </p>
+                   </figcaption>
             </a>
                     </div>
 
@@ -195,22 +228,21 @@ align-items: center;
                         image 7">
                         <figure>
                             <figcaption>
-                             some costr volunteers at k/Hall dedication
+                             volunteers at k/Hall dedication
                            </figcaption>
                         </figure>
                     </a>
-                            </div>
+                     </div>
                         <div class="image-thumbnail">
                     <a href="gallery/8.jpg"> <img src="gallery/8.1.jpg" alt="Thumbnail for
                         image 8">
                         <figure>
                             <figcaption>
                                 Cong. Young ones with Sister Lars
-                               
                             </figcaption>
                         </figure>
                     </a>
-                            </div>
+                   </div>
                         <div class="image-thumbnail">
                     <a href="gallery/9.jpg"> <img src="gallery/9.1.jpg" alt="Thumbnail for
                         image 9">
